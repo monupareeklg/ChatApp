@@ -6,6 +6,8 @@ const mongoose = require("mongoose");
 const session = require("express-session");
 const passport = require("passport");
 const passportLocalMongoose = require("passport-local-mongoose");
+const http = require("http")
+const io = require("socket.io")
 
 const app = express()
 
@@ -27,11 +29,11 @@ mongoose.connect(process.env.MONGO_PASS, { useNewUrlParser: true, useUnifiedTopo
 mongoose.set("useCreateIndex", true);
 
 const userSchema = new mongoose.Schema({
-    email: String,
-    password: String,
+    name: String,
+    message: String,
 });
 
-const Post = mongoose.model("Post", userSchema)
+const Message = mongoose.model("Message", userSchema)
 
 userSchema.plugin(passportLocalMongoose);
 

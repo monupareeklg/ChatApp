@@ -1,3 +1,65 @@
 <%- include('partials/header') %>
+<div class="wrapper extra">
+    <div class="wrap_sidebar">
+        <div class="wrap_sidebar-header">
+            <span>Chats</span>
+        </div>
+        <div class="wrap_sidebar-content">
+            <input type="text" placeholder="Search chats"/>
+        </div>
+        
+    </div>
+    <div class="wrap_chat grid-container">
+        <div class="wrap_chat-header">
+            <div class="wrap_chat-header--user">
+                <figure class="wrap_chat-header--user___avatar">
+                    <img src="img/man_avatar3.jpg" alt="avatar" class="rounded-circle">
+                </figure>
+                <div class="wrap_chat-header--user___content">
+                    <h5 class="name">Byrom Guitted</h5>
+                    <small class="status">offline</small>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="wrap_chat-body">
+            <div class="messages">
+                <div class="message-item ingoing-message">
+                    <div class="message-avatar">
+                            
+                    </div>
+                    <div class="message-content">
 
+                        what is your name
+
+                    </div>
+                </div>
+                <div class="message-item outgoing-message">
+                        <div class="message-avatar">
+                                
+                        </div>
+                        <div class="message-content">
+                           what is your name ? 
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <div class="chat-footer--typing">
+                
+                    <input type="text" placeholder="Typing message..."/>
+                    <div class="btn-c">
+                        <a href="#">
+                            <img src="icon/send.svg" alt="send">
+                        </a>
+                    </div>
+                    <div class="btn-c">
+                        <a href="#">
+                            <img src="icon/attach.svg" alt="attach">
+                        </a>
+                    </div>
+            </div>
+        </div>
+</div>
 <%- include('partials/footer') %>
